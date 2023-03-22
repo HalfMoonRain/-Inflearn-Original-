@@ -65,3 +65,7 @@ print('sorted - ', f_list)
 # 반환 값 확인(None)
 print('sort - ', f_list.sort())
 print('sort - ', f_list.sort(reverse=True), f_list)
+
+# list vs Array 적합 한 사용법 설명
+# 리스트 기반 : 융통성,  다양한 자료형, 범용적 사용
+# 숫자 기반 : 배열 (리스트와 거의 호환)
