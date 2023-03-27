@@ -45,9 +45,15 @@ s1.add('Melon')
 # 바이트 코드 -> 파이썬 인터프리터 실행
 from dis import dis
 
-
+# 미세하게 set으로 선언하는거보다 바로 선언하는게 더 좋다.
 print('-------')
 print(dis('{10}'))
 print('-------')
 print(dis('set([10])'))
 
+# 지능형 집합(Comprehending Set)
+
+print('-------')
+from unicodedata import name
+
+print({name(chr(i), '') for i in range(0, 256)})

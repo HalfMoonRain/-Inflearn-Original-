@@ -17,8 +17,14 @@ class A:
     pass
 
 print(factorial(6))
+
+# 주석 확인 
 print(factorial.__doc__)
+
+# <class 'function'> <class 'type'>
 print(type(factorial), type(A))
+
+# 함수만 가지고 있는 특징
 print(set(sorted(dir(factorial))) - set(sorted(dir(A))))
 print(factorial.__name__)
 print(factorial.__code__)
